@@ -52,11 +52,6 @@ func parseArgs() Options {
 }
 
 func run(options Options) error {
-	slog.Debug("test", "test", "Debug")
-	slog.Debug("test", "LogLevel", options.LogLevel)
-	slog.Info("test", "test", "Info")
-	slog.Error("test", "test", "Error")
-
 	ageDuration, err := parseAge(options.Age)
 	if err != nil {
 		slog.Error("Error parsing age", "error", err)
