@@ -87,6 +87,8 @@ func parseAge(age string) (time.Duration, error) {
 		return 0, err
 	}
 
+	slog.Debug("parseAge", "age", age, "unit", unit, "value", value)
+
 	switch unit {
 	case "s":
 		return time.Duration(value) * time.Second, nil

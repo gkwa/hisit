@@ -17,3 +17,19 @@ Example:
 cd ~/pdev/taylormonacelli/hisit
 make && ./hisit --log-level=debug --dir=/tmp/anythingpassengercarcompact --depth 10 --age=30d
 #+end_example
+
+** log
+
+#+begin_example
+[mtm@taylors-MacBook-Pro-2:hisit(master)]$ make && ./hisit --log-level=debug --dir=/tmp/anythingpassengercarcompact --depth 10 --age=30d
+make: 'hisit' is up to date.
+level=DEBUG source=hisit/hisit.go:55 msg=test test=Debug
+level=DEBUG source=hisit/hisit.go:56 msg=test LogLevel=debug
+level=INFO source=hisit/hisit.go:57 msg=test test=Info
+level=ERROR source=hisit/hisit.go:58 msg=test test=Error
+level=DEBUG source=hisit/hisit.go:90 msg=parseAge age=30d unit=d value=30
+level=DEBUG source=hisit/hisit.go:66 msg=parseAge age=720h0m0s
+level=DEBUG source=hisit/hisit.go:133 msg="Modified directory found" directory=/tmp/anythingpassengercarcompact/.vscode
+level=DEBUG source=hisit/hisit.go:133 msg="Modified directory found" directory=/tmp/anythingpassengercarcompact/cmd
+[mtm@taylors-MacBook-Pro-2:hisit(master)]$ 
+#+end_example
