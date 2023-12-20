@@ -1,5 +1,11 @@
 * hisit
 
+** abandoned because bash find can do this easiliy
+
+#+begin_example
+find -L /tmp -maxdepth 1 -type d -mtime -3
+#+end_example
+
 ** summary
 
 This is a description of project hisit.
@@ -8,7 +14,6 @@ This is a description of project hisit.
 
 Example:
 #+begin_example
-make test
-./hisit --help
-./hisit --log-level=debug
+cd ~/pdev/taylormonacelli/hisit
+make && ./hisit --log-level=debug --dir=/tmp/anythingpassengercarcompact --depth 10 --age=30d
 #+end_example
