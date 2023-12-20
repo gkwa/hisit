@@ -1,0 +1,14 @@
+* hisit
+
+** summary
+
+This is a description of project hisit.
+
+** usage
+
+Example:
+#+begin_example
+make test
+./hisit --help
+./hisit --log-level=debug
+#+end_example
